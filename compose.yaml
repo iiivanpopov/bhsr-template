@@ -4,7 +4,7 @@ services:
   backend:
     build: ./apps/backend
     ports:
-      - '${BACKEND_PORT}:${BACKEND_PORT}'
+      - ${BACKEND_PORT}:${BACKEND_PORT}
     env_file: .env
     environment:
       PORT: ${BACKEND_PORT}
@@ -23,9 +23,8 @@ services:
     build:
       context: ./apps/frontend
     ports:
-      - '${FRONTEND_PORT}:80'
-    env_file: .env
-    environment: 
+      - ${FRONTEND_PORT}:80
+    environment:
       API_URL: http://${BACKEND_HOST}:${BACKEND_PORT}/
     depends_on:
       - backend
