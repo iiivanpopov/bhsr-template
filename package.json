@@ -1,5 +1,5 @@
 {
-  "name": "@template/frontend",
+  "name": "template",
   "type": "module",
   "workspaces": ["apps/*"],
   "scripts": {
