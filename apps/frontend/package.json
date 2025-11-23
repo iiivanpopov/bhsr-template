@@ -1,0 +1,33 @@
+{
+  "name": "@template/frontend",
+  "type": "module",
+  "scripts": {
+    "build:dev": "tsc -b && vite build",
+    "build:prod": "vite build",
+    "dev": "vite",
+    "prod": "vite preview"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "5.2.2",
+    "@siberiacancode/fetches": "1.13.1",
+    "@tanstack/react-query": "5.90.10",
+    "@tanstack/react-router": "1.136.18",
+    "@tanstack/router-plugin": "1.136.18",
+    "lucide-react": "0.554.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-hook-form": "7.66.1",
+    "react-intl": "7.1.14",
+    "sonner": "2.0.7",
+    "zod": "4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@vitejs/plugin-react": "5.1.0",
+    "babel-plugin-react-compiler": "1.0.0",
+    "typescript": "5.9.3",
+    "vite": "7.2.4"
+  }
+}

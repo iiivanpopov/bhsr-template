@@ -1,0 +1,7 @@
+node_modules
+dist
+Dockerfile
+.env
+.env.example
+database.sqlite
+database.example
